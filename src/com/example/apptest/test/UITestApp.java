@@ -43,5 +43,18 @@ public class UITestApp extends ActivityInstrumentationTestCase2<MainActivity> {
 		assertTrue("Test Success", testSuccess);
 
 	}
+	
+	public void testUIClick() throws Exception {
+		// Unlock the lock screen
+		solo.unlockScreen();
+		// Assert that NoteEditor activity is opened
+		solo.assertCurrentActivity("Expected MainActivity activity",
+				"MainActivity");
+		// Change orientation of activity
+		solo.clickOnButton(0);
+		boolean testSuccess = true;
+		assertTrue("Test Success", testSuccess);
+
+	}
 
 }

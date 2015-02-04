@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="test.java.com.example.apptest.test"
+    package="com.example.apptest.test"
     android:versionCode="1"
     android:versionName="1.0" >
 
